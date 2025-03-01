@@ -1,3 +1,7 @@
+download de Aula2402FLP, os valores serão modificados/infomados no próprio, enquanto o Aula2402FLPUsuario, os valores são colocados pelo terminal, execução do código.
+
+-------------------
+
 explicação do código:
 
 1. Declaração de variáveis: o código começa declarando as variáveis que serão usadas:
