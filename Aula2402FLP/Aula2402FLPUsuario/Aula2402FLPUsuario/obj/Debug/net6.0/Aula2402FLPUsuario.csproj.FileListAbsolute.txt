@@ -1,0 +1,15 @@
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\bin\Debug\net6.0\Aula2402FLPUsuario.exe
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\bin\Debug\net6.0\Aula2402FLPUsuario.deps.json
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\bin\Debug\net6.0\Aula2402FLPUsuario.runtimeconfig.json
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\bin\Debug\net6.0\Aula2402FLPUsuario.dll
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\bin\Debug\net6.0\ref\Aula2402FLPUsuario.dll
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\bin\Debug\net6.0\Aula2402FLPUsuario.pdb
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.csproj.AssemblyReference.cache
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.AssemblyInfoInputs.cache
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.AssemblyInfo.cs
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.csproj.CoreCompileInputs.cache
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.dll
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\ref\Aula2402FLPUsuario.dll
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.pdb
+C:\Users\unisanta\source\repos\Aula2402FLPUsuario\Aula2402FLPUsuario\obj\Debug\net6.0\Aula2402FLPUsuario.genruntimeconfig.cache
