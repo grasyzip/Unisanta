@@ -1,0 +1,15 @@
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\bin\Debug\net6.0\Aula2402FLP.exe
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\bin\Debug\net6.0\Aula2402FLP.deps.json
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\bin\Debug\net6.0\Aula2402FLP.runtimeconfig.json
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\bin\Debug\net6.0\Aula2402FLP.dll
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\bin\Debug\net6.0\ref\Aula2402FLP.dll
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\bin\Debug\net6.0\Aula2402FLP.pdb
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.csproj.AssemblyReference.cache
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.AssemblyInfoInputs.cache
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.AssemblyInfo.cs
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.csproj.CoreCompileInputs.cache
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.dll
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\ref\Aula2402FLP.dll
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.pdb
+C:\Users\unisanta\source\repos\Aula2402FLP\Aula2402FLP\obj\Debug\net6.0\Aula2402FLP.genruntimeconfig.cache
