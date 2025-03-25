@@ -1,0 +1,85 @@
+//1) 
+Console.WriteLine("1) Entre com o peso (kg) e a altura (m) da pessoa:");
+float peso = float.Parse(Console.ReadLine());
+float altura = float.Parse(Console.ReadLine());
+float imc = peso / (altura * altura);
+        
+if (imc < 20) { Console.WriteLine("Abaixo do peso"); }
+        else if (imc >= 20 && imc < 25) { Console.WriteLine("Peso ideal"); }
+        else { Console.WriteLine("Acima do peso"); }
+
+//2)
+Console.WriteLine("1) Entre com o peso (kg) e a altura (m) da pessoa:");
+float peso = float.Parse(Console.ReadLine());
+float altura = float.Parse(Console.ReadLine());
+float imc = peso / (altura * altura);
+        
+if (imc < 20) { Console.WriteLine("Abaixo do peso"); }
+        else if (imc >= 20 && imc < 25) { Console.WriteLine("Peso ideal"); }
+        else { Console.WriteLine("Acima do peso"); }
+
+//3) 
+Console.WriteLine("2) Entre com três valores para verificar se formam um triângulo:");
+float lado1 = flaot.Parse(Console.ReadLine());
+float lado2 = float.Parse(Console.ReadLine());
+float lado3 = float.Parse(Console.ReadLine());
+
+if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1)
+{ if (lado1 == lado2 && lado2 == lado3)
+{ Console.WriteLine("Triângulo equilátero"); }
+else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3)
+{ Console.WriteLine("Triângulo isósceles"); }
+else { Console.WriteLine("Triângulo escaleno"); } }
+else { Console.WriteLine("Os valores não formam um triângulo."); }
+
+Console.WriteLine("3) Entre com três valores para verificar se formam um triângulo retângulo:");
+float a = float.Parse(Console.ReadLine());
+flaot b = float.Parse(Console.ReadLine());
+float c = float.Parse(Console.ReadLine());
+
+if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+{ Console.WriteLine("Os valores formam um triângulo retângulo."); }
+else { Console.WriteLine("Os valores não formam um triângulo retângulo."); }
+
+//4) 
+Console.WriteLine("4) Entre com o peso (kg), altura (m) e sexo (M/F) da pessoa:");
+peso = float.Parse(Console.ReadLine());
+altura = float.Parse(Console.ReadLine());
+char sexo = char.Parse(Console.ReadLine().ToUpper());
+
+imc = peso / (altura * altura);
+        
+if (sexo == 'F') { if (imc < 19)
+            { Console.WriteLine("Abaixo do peso"); }
+            else if (imc >= 19 && imc < 24)
+            { Console.WriteLine("Peso ideal"); }
+            else { Console.WriteLine("Acima do peso"); } }
+        else if (sexo == 'M')
+        { if (imc < 20)
+            { Console.WriteLine("Abaixo do peso"); }
+            else if (imc >= 20 && imc < 25)
+            { Console.WriteLine("Peso ideal"); }
+            else
+            { Console.WriteLine("Acima do peso"); } } 
+	else { Console.WriteLine("Sexo inválido."); }
+
+//5) 
+Console.WriteLine("5) Entre com a aceleração (m/s²), velocidade inicial (m/s) e tempo (s):");
+float aceleracao = float.Parse(Console.ReadLine());
+float velocidadeInicial = float.Parse(Console.ReadLine());
+float tempo = float.Parse(Console.ReadLine());
+
+float velocidadeFinal = velocidadeInicial + aceleracao * tempo;
+float velocidadeFinalKmH = velocidadeFinal * 3.6; // Convertendo m/s para km/h
+
+Console.WriteLine("A velocidade final é: " + velocidadeFinalKmH + " km/h");
+
+if (velocidadeFinalKmH <= 40)
+{ Console.WriteLine("Veículo muito lento"); }
+else if (velocidadeFinalKmH > 40 && velocidadeFinalKmH <= 60)
+{ Console.WriteLine("Velocidade permitida"); }
+else if (velocidadeFinalKmH > 60 && velocidade FinalKmH <= 80)
+{ Console.WriteLine("Velocidade de cruzeiro"); }
+else if (velocidadeFinalKmH > 80 && velocidadeFinalKmH <= 120)
+{ Console.WriteLine("Veículo rápido"); }
+else { Console.WriteLine("Veículo muito rápido"); } }
