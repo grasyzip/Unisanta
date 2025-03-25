@@ -1,0 +1,59 @@
+1) Entrar com o peso e a altura de uma determinada pessoa. Após a digitação,
+exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da relação
+peso/altura2.
+
++-----------------------+----------------+
+| Relação peso/altura2  |    Mensagem    |
+|-----------------------+----------------|
+| 	R < 20          | Abaixo do peso |
+|    20 <= R < 25       |   Peso ideal   |
+|       R >= 25         | Acima do peso  |
++----------------------------------------+
+
+2) A partir de 3 (três) valores que serão digitados, verificar se formam ou não um
+triângulo. Em caso positivo, exibir sua classificação: “Isósceles, escaleno ou
+equilátero”. Um triângulo escaleno possui todos os lados diferentes, o triângulo
+isósceles, dois lados iguais e o equilátero, todos os lados iguais. Para existir
+triângulo é necessário que a soma de dois lados quaisquer seja maior que o
+outro, isto, para os três lados.
+
+3) Verificar se três valores quaisquer (A, B, C) que serão digitados formam ou não
+um triângulo retângulo. Lembre-se que o quadrado da hipotenusa é igual à soma
+dos quadrados dos catetos.
+
+4) Entrar com o peso, o sexo e a altura de uma determinada pessoa. Após a
+digitação, exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da
+relação peso/altura2.
+
++-----------------------+----------------+
+| Relação peso/altura2  |    Mensagem    |
+| Feminino              |                |
+|-----------------------+----------------|
+| 	R < 19          | Abaixo do peso |
+|    19 <= R < 24       |   Peso ideal   |
+|       R >= 24         | Acima do peso  |
++----------------------------------------+
+
++-----------------------+----------------+
+| Relação peso/altura2  |    Mensagem    |
+| Masculino             |                |
+|-----------------------+----------------|
+| 	R < 20          | Abaixo do peso |
+|    20 <= R < 25       |   Peso ideal   |
+|       R >= 25         | Acima do peso  |
++----------------------------------------+
+
+5) A partir dos valores da aceleração (a em m/s2), da velocidade inicial (v0 em m/s)
+e do tempo de percurso (t em s). Calcular e exibir a velocidade final de automóvel
+em km/h. Exibir mensagem de acordo com a tabela abaixo. Fórmula para o
+cálculo da velocidade em m/s: V = v0 + a. t.
+
++--------------------------------------+
+|   Velocidade em Km/h (V) Mensagem    |
+|--------------------------------------|
+|   V < = 40   | Veículo muito lento   |
+| 40 < V <= 60 | Velocidade permitida  |
+| 60 < V <= 80 | Velocidade de cruzeiro|
+| 80 < V <= 120| Veículo rápido        |
+|   R >= 120   | Veículo muito rápido  |
++--------------------------------------+
