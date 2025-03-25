@@ -1,0 +1,57 @@
+//1) 
+Console.WriteLine("1) Entre com dois valores distintos:");
+int valor1 = int.Parse(Console.ReadLine());
+int valor2 = int.Parse(Console.ReadLine());
+Console.WriteLine("O maior valor é: " + Math.Max(valor1, valor2));
+
+//2) 
+Console.WriteLine("2) Entre com dois valores distintos:");
+valor1 = int.Parse(Console.ReadLine());
+valor2 = int.Parse(Console.ReadLine());
+Console.WriteLine("O menor valor é: " + Math.Min(valor1, valor2));
+
+//3) 
+Console.WriteLine("3) Entre com dois valores quaisquer:");
+valor1 = int.Parse(Console.ReadLine());
+valor2 = int.Parse(Console.ReadLine());
+if (valor1 == valor2) { Console.WriteLine("Os números são idênticos."); }
+        else { Console.WriteLine("O maior valor é: " + Math.Max(valor1, valor2)); }
+
+//4) 
+Console.WriteLine("6) Entre com três valores distintos:");
+int valor3 = int.Parse(Console.ReadLine());
+valor1 = int.Parse(Console.ReadLine());
+valor2 = int.Parse(Console.ReadLine());
+int maior = Math.Max(valor1, Math.Max(valor2, valor3));
+Console.WriteLine("O maior valor é: " + maior);
+
+//5) 
+Console.WriteLine("5) Entre com a base e altura do retângulo:");
+baseRetangulo = float.Parse(Console.ReadLine());
+alturaRetangulo = float.Parse(Console.ReadLine());
+area = baseRetangulo * alturaRetangulo;
+Console.WriteLine("A área do retângulo é: " + area);
+if (area > 100) { Console.WriteLine("Terreno grande"); }
+        else { Console.WriteLine("Terreno pequeno"); }
+
+//6)
+Console.WriteLine("6) Entre com três valores distintos:");
+int valor3 = int.Parse(Console.ReadLine());
+valor1 = int.Parse(Console.ReadLine());
+valor2 = int.Parse(Console.ReadLine());
+int maior = Math.Max(valor1, Math.Max(valor2, valor3));
+Console.WriteLine("O maior valor é: " + maior);
+
+//7) 
+Console.WriteLine("7) Entre com as notas P1 e P2:");
+float p1 = float.Parse(Console.ReadLine());
+float p2 = float.Parse(Console.ReadLine());
+float media = (p1 + 2 * p2) / 3;
+Console.WriteLine("A média é: " + media);
+Console.WriteLine(media >= 5 ? "Aprovado" : "Reprovado");
+
+//8) 
+Console.WriteLine("8) Entre com a nota P1:");
+p1 = float.Parse(Console.ReadLine());
+float p2Necessaria = (5 * 3 - p1) / 2;
+Console.WriteLine("O aluno precisa tirar na P2: " + p2Necessaria); }
