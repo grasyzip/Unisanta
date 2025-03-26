@@ -11,7 +11,7 @@ do
 } while (valor <= 0);
   return valor;
 
-//02) refazer
+//02) 
 int valor1 = LerValorPositivo();
 int valor2;
 do
