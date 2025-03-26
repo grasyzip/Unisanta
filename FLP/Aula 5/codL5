@@ -193,7 +193,7 @@ public class TabuadaDecrescente
 
         do
         {
-            Console.Write($"Digite o fim do intervalo (B), maior que {inicio}: ");
+            Console.Write("Digite o fim do intervalo (B), maior que {inicio}: ");
             string entrada = Console.ReadLine();
 
             if (int.TryParse(entrada, out fim) && fim > inicio)
@@ -202,7 +202,7 @@ public class TabuadaDecrescente
             }
             else
             {
-                Console.WriteLine($"Entrada inválida. Por favor, digite um número inteiro maior que {inicio}.");
+                Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro maior que {inicio}.");
             }
         } while (!fimValido);
 
@@ -211,10 +211,10 @@ public class TabuadaDecrescente
 
     public static void ExibirTabuadaDecrescente(int valor, int inicio, int fim)
     {
-        Console.WriteLine($"\nTabuada do {valor} (de {fim} a {inicio}):");
+        Console.WriteLine("Tabuada do {valor} (de {fim} a {inicio}):");
         for (int i = fim; i >= inicio; i--)
         {
-            Console.WriteLine($"{valor} x {i} = {valor * i}");
+            Console.WriteLine("{valor} x {i} = {valor * i}");
         }
     }
 }
