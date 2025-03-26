@@ -11,7 +11,7 @@ do
 } while (valor <= 0);
   return valor;
 
-//02)
+//02) refazer
 int valor1 = LerValorPositivo();
 int valor2;
 do
@@ -45,51 +45,140 @@ do
         Console.WriteLine("5 x {0} = {1}", contador, 5 * contador);
     }
 
-//05)
-    int valor = LerValorPositivo();
-    Console.WriteLine("Tabuada do {valor}:");
-    for (int contador = 1; contador <= 10; contador++)
+//05) refeito, rodar em programa separado (feito em outro estilo)
+using System;
+public class TabuadaPositiva
+{
+    public static void Main(string[] args)
     {
-        Console.WriteLine("{0} x {1} = {2}", valor, contador, valor * contador);
+        int valor = LerValorPositivo();
+        ExibirTabuada(valor);
     }
 
-//06)
-int x = LerValorPositivo();
-int a = LerValorPositivo();
-int b;
-do
-  {
-      Console.WriteLine("Digite um valor maior que {0}: ", a);
-      b = int.Parse(Console.ReadLine());
-      if (b <= a)
-      {
-           Console.WriteLine("Valor inválido. Digite um valor maior que {0}.", a);
-      }
-  } while (b <= a);
+    public static int LerValorPositivo()
+    {
+        int valor;
+        bool valorValido = false;
 
-  Console.WriteLine("Tabuada de {0} de {1} a {2}:", x, b, a);
-  for (int contador = b; contador >= a; contador--)
-  {
-      Console.WriteLine("{0} x {1} = {2}", x, contador, x * contador);
-  }
+        do
+        {
+            Console.Write("Digite um número inteiro positivo: ");
+            string entrada = Console.ReadLine();
 
-//07)
-int tabuada = 1;
-while (tabuada <= 20)
+            if (int.TryParse(entrada, out valor) && valor > 0)
+            {
+                valorValido = true;
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro positivo.");
+            }
+        } while (!valorValido);
+
+        return valor;
+    }
+
+    public static void ExibirTabuada(int valor)
+    {
+        Console.WriteLine($"\nTabuada do {valor}:");
+        for (int contador = 1; contador <= 10; contador++)
+        {
+            Console.WriteLine($"{valor} x {contador} = {valor * contador}");
+        }
+    }
+}
+
+//06) refeito, rodar em programa separado (feito em outro estilo)
+using System;
+
+public class TabuadaDecrescente
 {
-  int contador3 = 0;
-  while (contador3 <= 10)
-  {
-    Console.WriteLine("{0} * {1} = {2}", tabuada, contador3,
-    tabuada * contador3);
-    contador3++;
-  }
-  if (tabuada < 20)
-  {
-    Console.WriteLine("pressione qualquer tecla");
-    Console.ReadKey();
-  }
-  tabuada++;
+    public static void Main(string[] args)
+    {
+        int valor = LerValorPositivo();
+        int inicioIntervalo = LerInicioIntervalo();
+        int fimIntervalo = LerFimIntervalo(inicioIntervalo);
+
+        ExibirTabuadaDecrescente(valor, inicioIntervalo, fimIntervalo);
+    }
+
+    public static int LerValorPositivo()
+    {
+        int valor;
+        bool valorValido = false;
+
+        do
+        {
+            Console.Write("Digite um número inteiro positivo (X): ");
+            string entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out valor) && valor > 0)
+            {
+                valorValido = true;
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro positivo.");
+            }
+        } while (!valorValido);
+
+        return valor;
+    }
+
+    public static int LerInicioIntervalo()
+    {
+        int inicio;
+        bool inicioValido = false;
+
+        do
+        {
+            Console.Write("Digite o início do intervalo (A): ");
+            string entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out inicio))
+            {
+                inicioValido = true;
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro.");
+            }
+        } while (!inicioValido);
+
+        return inicio;
+    }
+
+    public static int LerFimIntervalo(int inicio)
+    {
+        int fim;
+        bool fimValido = false;
+
+        do
+        {
+            Console.Write($"Digite o fim do intervalo (B), maior que {inicio}: ");
+            string entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out fim) && fim > inicio)
+            {
+                fimValido = true;
+            }
+            else
+            {
+                Console.WriteLine($"Entrada inválida. Por favor, digite um número inteiro maior que {inicio}.");
+            }
+        } while (!fimValido);
+
+        return fim;
+    }
+
+    public static void ExibirTabuadaDecrescente(int valor, int inicio, int fim)
+    {
+        Console.WriteLine($"\nTabuada do {valor} (de {fim} a {inicio}):");
+        for (int i = fim; i >= inicio; i--)
+        {
+            Console.WriteLine($"{valor} x {i} = {valor * i}");
+        }
+    }
 }
 
 //08)
@@ -107,10 +196,10 @@ int valor1 = int.Parse(Console.ReadLine());
 int maior = valor1;
 int menor = valor1;
 int contador5 = 2;
-while (contador4 <= 10)
+while (contador5 <= 10)
 {
   Console.WriteLine("{0} valor:", contador5);
-  valor = int.Parse(Console.ReadLine());
+  valor1 = int.Parse(Console.ReadLine());
   if (valor1 > maior) maior = valor1;
   if (valor1 < menor) menor = valor1;
   contador5++;
@@ -146,14 +235,14 @@ while (contador6 <= 30)
         }
     } while (n <= 0 || n >= 50);
 
-    double soma = 0;
+    float soma = 0f;
     for (int i = 1; i <= n; i++)
     {
-        soma += (double)i / (i + 1);
+        soma += (float)i / (i + 1);
     }
-    Console.WriteLine($"A soma dos {n} primeiros termos é: {soma}");
+    Console.WriteLine("A soma dos {0} primeiros termos é: {1}",n , soma);
 
-//12)
+//12) outra forma de resolver a 9 usando MinValue e MaxValue
       int[] valores = new int[10];
       int maior = int.MinValue;
       int menor = int.MaxValue;
@@ -182,7 +271,7 @@ while (contador6 <= 30)
 
     do
     {
-        Console.Write("Digite o valor de A (maior que B): ");
+        Console.Write("Digite o valor de A: ");
         a = int.Parse(Console.ReadLine());
         Console.Write("Digite o valor de B: ");
         b = int.Parse(Console.ReadLine());
@@ -198,14 +287,12 @@ while (contador6 <= 30)
     {
         resto -= b;
     }
-
     Console.WriteLine($"O resto da divisão de {a} por {b} é: {resto}");
-}
 
 //14)
-    double somaPesoHomens = 0;
+    float somaPesoHomens = 0;
     int quantidadeHomens = 0;
-    double somaPesoMulheres = 0;
+    float somaPesoMulheres = 0;
     int quantidadeMulheres = 0;
 
     for (int i = 0; i < 100; i++)
@@ -214,7 +301,7 @@ while (contador6 <= 30)
         char sexo = char.Parse(Console.ReadLine().ToUpper());
 
         Console.Write($"Digite o peso da {i + 1}ª pessoa: ");
-        double peso = double.Parse(Console.ReadLine());
+        float peso = float.Parse(Console.ReadLine());
 
         if (sexo == 'M')
         {
@@ -235,7 +322,7 @@ while (contador6 <= 30)
 
     if (quantidadeHomens > 0)
     {
-        Console.WriteLine($"Média de peso dos homens: {somaPesoHomens / quantidadeHomens}");
+        Console.WriteLine("Média de peso dos homens: {somaPesoHomens / quantidadeHomens}");
     }
     else
     {
@@ -244,7 +331,7 @@ while (contador6 <= 30)
 
     if (quantidadeMulheres > 0)
     {
-        Console.WriteLine($"Média de peso das mulheres: {somaPesoMulheres / quantidadeMulheres}");
+        Console.WriteLine("Média de peso das mulheres: {somaPesoMulheres / quantidadeMulheres}");
     }
     else
     {
@@ -263,17 +350,17 @@ while (contador6 <= 30)
         }
     } while (n < 1 || n > 19);
 
-    double[] valores = new double[n];
-    double maior = double.MinValue;
-    double menor = double.MaxValue;
-    double soma = 0;
+    float[] valores = new float[n];
+    float maior = float.MinValue;
+    float menor = float.MaxValue;
+    float soma = 0;
     int quantidadePositivos = 0;
     int quantidadeNegativos = 0;
 
     for (int i = 0; i < n; i++)
     {
-        Console.Write($"Digite o {i + 1}º valor: ");
-        valores[i] = double.Parse(Console.ReadLine());
+        Console.Write($"Digite o {0}º valor: ", i + 1);
+        valores[i] = float.Parse(Console.ReadLine());
 
         if (valores[i] > maior)
         {
@@ -297,10 +384,10 @@ while (contador6 <= 30)
         }
     }
 
-    Console.WriteLine($"Maior valor: {maior}");
-    Console.WriteLine($"Menor valor: {menor}");
-    Console.WriteLine($"Soma dos valores: {soma}");
-    Console.WriteLine($"Média dos valores: {soma / n}");
-    Console.WriteLine($"Porcentagem de valores positivos: {(double)quantidadePositivos / n * 100}%");
-    Console.WriteLine($"Porcentagem de valores negativos: {(double)quantidadeNegativos / n * 100}%");
+    Console.WriteLine("Maior valor: {0}", maior);
+    Console.WriteLine("Menor valor: {0}", menor);
+    Console.WriteLine("Soma dos valores: {0}", soma);
+    Console.WriteLine("Média dos valores: {0}", soma / n);
+    Console.WriteLine("Porcentagem de valores positivos: {0}%", (float)quantidadePositivos / n * 100);
+    Console.WriteLine("Porcentagem de valores negativos: {0}%", (float)quantidadeNegativos / n * 100);
 
