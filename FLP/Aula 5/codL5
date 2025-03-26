@@ -118,10 +118,10 @@ public class TabuadaPositiva
 
     public static void ExibirTabuada(int valor)
     {
-        Console.WriteLine($"\nTabuada do {valor}:");
+        Console.WriteLine("Tabuada do {0}:", valor);
         for (int contador = 1; contador <= 10; contador++)
         {
-            Console.WriteLine($"{valor} x {contador} = {valor * contador}");
+            Console.WriteLine("{0} x {1} = {2}", valor, contador, valor * contador);
         }
     }
 }
