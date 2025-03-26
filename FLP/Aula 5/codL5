@@ -2,7 +2,7 @@
 int valor;
 do
 {
-  Console.Write("Digite um valor positivo: ");
+  Console.WriteLine("Digite um valor positivo: ");
   valor = int.Parse(Console.ReadLine());
   if (valor <= 0)
   {
@@ -16,20 +16,20 @@ int valor1 = LerValorPositivo();
 int valor2;
 do
 {
-  Console.Write($"Digite um valor maior que {valor1}: ");
+  Console.WriteLine("Digite um valor maior que {0}: ", valor1);
   valor2 = int.Parse(Console.ReadLine());
   if (valor2 <= valor1)
   {
-      Console.WriteLine($"Valor inválido. Digite um valor maior que {valor1}.");
+      Console.WriteLine("Valor inválido. Digite um valor maior que {0}.", valor1);
   }
 } while (valor2 <= valor1);
-  Console.WriteLine($"Valores lidos: {valor1}, {valor2}");
+  Console.WriteLine("Valores lidos: {0}, {1}", valor1, valor2 );
 
 //03)
     char sexo;
     do
     {
-        Console.Write("Digite o sexo (F/M): ");
+        Console.WriteLine("Digite o sexo (F/M): ");
         sexo = char.Parse(Console.ReadLine().ToUpper());
         if (sexo != 'F' && sexo != 'M')
         {
@@ -40,17 +40,17 @@ do
 
 //04)
     Console.WriteLine("Tabuada do 5:");
-    for (int i = 1; i <= 10; i++)
+    for (int contador = 1; contador <= 10; contador++)
     {
-        Console.WriteLine($"5 x {i} = {5 * i}");
+        Console.WriteLine("5 x {0} = {1}", contador, 5 * contador);
     }
 
 //05)
     int valor = LerValorPositivo();
-    Console.WriteLine($"Tabuada do {valor}:");
-    for (int i = 1; i <= 10; i++)
+    Console.WriteLine("Tabuada do {valor}:");
+    for (int contador = 1; contador <= 10; contador++)
     {
-        Console.WriteLine($"{valor} x {i} = {valor * i}");
+        Console.WriteLine("{0} x {1} = {2}", valor, contador, valor * contador);
     }
 
 //06)
@@ -59,71 +59,80 @@ int a = LerValorPositivo();
 int b;
 do
   {
-      Console.Write($"Digite um valor maior que {a}: ");
+      Console.WriteLine("Digite um valor maior que {0}: ", a);
       b = int.Parse(Console.ReadLine());
       if (b <= a)
       {
-           Console.WriteLine($"Valor inválido. Digite um valor maior que {a}.");
+           Console.WriteLine("Valor inválido. Digite um valor maior que {0}.", a);
       }
   } while (b <= a);
 
-  Console.WriteLine($"Tabuada de {x} de {b} a {a}:");
-  for (int i = b; i >= a; i--)
+  Console.WriteLine("Tabuada de {0} de {1} a {2}:", x, b, a);
+  for (int contador = b; contador >= a; contador--)
   {
-      Console.WriteLine($"{x} x {i} = {x * i}");
+      Console.WriteLine("{0} x {1} = {2}", x, contador, x * contador);
   }
 
 //07)
-    for (int i = 1; i <= 20; i++)
-    {
-        Console.WriteLine($"Tabuada do {i}:");
-        for (int j = 1; j <= 10; j++)
-        {
-            Console.WriteLine($"{i} x {j} = {i * j}");
-        }
-        Console.WriteLine("Pressione qualquer tecla para continuar...");
-        Console.ReadKey();
-    }
+int tabuada = 1;
+while (tabuada <= 20)
+{
+  int contador3 = 0;
+  while (contador3 <= 10)
+  {
+    Console.WriteLine("{0} * {1} = {2}", tabuada, contador3,
+    tabuada * contador3);
+    contador3++;
+  }
+  if (tabuada < 20)
+  {
+    Console.WriteLine("pressione qualquer tecla");
+    Console.ReadKey();
+  }
+  tabuada++;
+}
 
 //08)
 
     int soma = 0;
-    for (int i = 1; i <= 100; i++)
+    for (int contador = 1; contador <= 100; contador++)
     {
-        soma += i;
+        soma += contador;
     }
-    Console.WriteLine($"A soma de 1 a 100 é: {soma}");
+    Console.WriteLine("A soma de 1 a 100 é: {0}", soma);
 
 //09)
-    int maior = int.MinValue;
-    int menor = int.MaxValue;
-    for (int i = 0; i < 10; i++)
-    {
-        Console.Write($"Digite o {i + 1}º valor: ");
-        int valor = int.Parse(Console.ReadLine());
-        if (valor > maior)
-        {
-            maior = valor;
-        }
-        if (valor < menor)
-        {
-            menor = valor;
-        }
-    }
-    Console.WriteLine($"Maior valor: {maior}");
-    Console.WriteLine($"Menor valor: {menor}");
+Console.WriteLine("Primeiro valor");
+int valor1 = int.Parse(Console.ReadLine());
+int maior = valor1;
+int menor = valor1;
+int contador5 = 2;
+while (contador4 <= 10)
+{
+  Console.WriteLine("{0} valor:", contador5);
+  valor = int.Parse(Console.ReadLine());
+  if (valor1 > maior) maior = valor1;
+  if (valor1 < menor) menor = valor1;
+  contador5++;
+}
+Console.WriteLine("Maior: {0}", maior);
+Console.WriteLine("Maior: {0}", menor);
 
 //10)
-    int a = 1, b = 1;
-    Console.Write("1, 1");
-    for (int i = 2; i < 30; i++)
-    {
-        int temp = b;
-        b = a + b;
-        a = temp;
-        Console.Write($", {b}");
-    }
-    Console.WriteLine();
+int a = 1;
+int b = 1;
+int contador6 = 1;
+Console.WriteLine("30 primeiros numeros da serie de Fibonacci");
+while (contador6 <= 30)
+{
+  Console.WriteLine(a);
+  int proximo = a + b;
+  a = b;
+  b = proximo;
+  contador6++;
+}
+
+//-------------
 
 //11)
     int n;
