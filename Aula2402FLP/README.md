@@ -1,4 +1,4 @@
-download de Aula2402FLP, os valores serão modificados/infomados no próprio, enquanto o Aula2402FLPUsuario, os valores são colocados pelo terminal, execução do código.
+download de Aula2402FLP, os valores serão modificados/infomados no próprio código, enquanto o Aula2402FLPUsuario, os valores são colocados pelo terminal, execução do código.
 
 -------------------
 
@@ -9,7 +9,7 @@ explicação do código:
   - delta: discriminante da equação.
   - raiz, raiz1, raiz2: raízes da equação.
 
-	*Entrada de dados no código 2:
+	Entrada de dados no código 2:
 		!double.TryParse(..., out a):
 
 		usamos double.Parse() para converter as strings em números, se o usuário 
