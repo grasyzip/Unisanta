@@ -11,19 +11,57 @@ do
 } while (valor <= 0);
   return valor;
 
-//02) 
-int valor1 = LerValorPositivo();
-int valor2;
-do
+//02) rodar em programa separado
+using System;
+public class LerValores
 {
-  Console.WriteLine("Digite um valor maior que {0}: ", valor1);
-  valor2 = int.Parse(Console.ReadLine());
-  if (valor2 <= valor1)
-  {
-      Console.WriteLine("Valor inválido. Digite um valor maior que {0}.", valor1);
-  }
-} while (valor2 <= valor1);
-  Console.WriteLine("Valores lidos: {0}, {1}", valor1, valor2 );
+    public static int LerValorPositivo()
+    {
+        int valor;
+        bool valorValido = false;
+
+        do
+        {
+            Console.Write("Digite um número inteiro positivo: ");
+            string entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out valor) && valor > 0)
+            {
+                valorValido = true;
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro positivo.");
+            }
+        } while (!valorValido);
+
+        return valor;
+    }
+
+    public static void Main(string[] args)
+    {
+        int valor1 = LerValorPositivo();
+        int valor2;
+        bool valor2Valido = false;
+
+        do
+        {
+            Console.WriteLine("Digite um valor maior que {0}: ", valor1);
+            string entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out valor2) && valor2 > valor1)
+            {
+                valor2Valido = true;
+            }
+            else
+            {
+                Console.WriteLine("Valor inválido. Digite um valor maior que {0}.", valor1);
+            }
+        } while (!valor2Valido);
+
+        Console.WriteLine("Valores lidos: {0}, {1}", valor1, valor2);
+    }
+}
 
 //03)
     char sexo;
