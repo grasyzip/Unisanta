@@ -1,0 +1,297 @@
+//01)
+int valor;
+do
+{
+  Console.Write("Digite um valor positivo: ");
+  valor = int.Parse(Console.ReadLine());
+  if (valor <= 0)
+  {
+      Console.WriteLine("Valor inválido. Digite novamente.");
+  }
+} while (valor <= 0);
+  return valor;
+
+//02)
+int valor1 = LerValorPositivo();
+int valor2;
+do
+{
+  Console.Write($"Digite um valor maior que {valor1}: ");
+  valor2 = int.Parse(Console.ReadLine());
+  if (valor2 <= valor1)
+  {
+      Console.WriteLine($"Valor inválido. Digite um valor maior que {valor1}.");
+  }
+} while (valor2 <= valor1);
+  Console.WriteLine($"Valores lidos: {valor1}, {valor2}");
+
+//03)
+    char sexo;
+    do
+    {
+        Console.Write("Digite o sexo (F/M): ");
+        sexo = char.Parse(Console.ReadLine().ToUpper());
+        if (sexo != 'F' && sexo != 'M')
+        {
+            Console.WriteLine("Sexo inválido. Digite F ou M.");
+        }
+    } while (sexo != 'F' && sexo != 'M');
+    return sexo;
+
+//04)
+    Console.WriteLine("Tabuada do 5:");
+    for (int i = 1; i <= 10; i++)
+    {
+        Console.WriteLine($"5 x {i} = {5 * i}");
+    }
+
+//05)
+    int valor = LerValorPositivo();
+    Console.WriteLine($"Tabuada do {valor}:");
+    for (int i = 1; i <= 10; i++)
+    {
+        Console.WriteLine($"{valor} x {i} = {valor * i}");
+    }
+
+//06)
+int x = LerValorPositivo();
+int a = LerValorPositivo();
+int b;
+do
+  {
+      Console.Write($"Digite um valor maior que {a}: ");
+      b = int.Parse(Console.ReadLine());
+      if (b <= a)
+      {
+           Console.WriteLine($"Valor inválido. Digite um valor maior que {a}.");
+      }
+  } while (b <= a);
+
+  Console.WriteLine($"Tabuada de {x} de {b} a {a}:");
+  for (int i = b; i >= a; i--)
+  {
+      Console.WriteLine($"{x} x {i} = {x * i}");
+  }
+
+//07)
+    for (int i = 1; i <= 20; i++)
+    {
+        Console.WriteLine($"Tabuada do {i}:");
+        for (int j = 1; j <= 10; j++)
+        {
+            Console.WriteLine($"{i} x {j} = {i * j}");
+        }
+        Console.WriteLine("Pressione qualquer tecla para continuar...");
+        Console.ReadKey();
+    }
+
+//08)
+
+    int soma = 0;
+    for (int i = 1; i <= 100; i++)
+    {
+        soma += i;
+    }
+    Console.WriteLine($"A soma de 1 a 100 é: {soma}");
+
+//09)
+    int maior = int.MinValue;
+    int menor = int.MaxValue;
+    for (int i = 0; i < 10; i++)
+    {
+        Console.Write($"Digite o {i + 1}º valor: ");
+        int valor = int.Parse(Console.ReadLine());
+        if (valor > maior)
+        {
+            maior = valor;
+        }
+        if (valor < menor)
+        {
+            menor = valor;
+        }
+    }
+    Console.WriteLine($"Maior valor: {maior}");
+    Console.WriteLine($"Menor valor: {menor}");
+
+//10)
+    int a = 1, b = 1;
+    Console.Write("1, 1");
+    for (int i = 2; i < 30; i++)
+    {
+        int temp = b;
+        b = a + b;
+        a = temp;
+        Console.Write($", {b}");
+    }
+    Console.WriteLine();
+
+//11)
+    int n;
+    do
+    {
+        Console.Write("Digite um valor N (1 a 49): ");
+        n = int.Parse(Console.ReadLine());
+        if (n <= 0 || n >= 50)
+        {
+            Console.WriteLine("Valor inválido. Digite novamente.");
+        }
+    } while (n <= 0 || n >= 50);
+
+    double soma = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        soma += (double)i / (i + 1);
+    }
+    Console.WriteLine($"A soma dos {n} primeiros termos é: {soma}");
+
+//12)
+      int[] valores = new int[10];
+      int maior = int.MinValue;
+      int menor = int.MaxValue;
+
+      for (int i = 0; i < 10; i++)
+      {
+          Console.Write($"Digite o {i + 1}º valor: ");
+          valores[i] = int.Parse(Console.ReadLine());
+
+          if (valores[i] > maior)
+          {
+              maior = valores[i];
+          }
+
+          if (valores[i] < menor)
+          {
+              menor = valores[i];
+          }
+      }
+
+      Console.WriteLine($"Maior valor: {maior}");
+      Console.WriteLine($"Menor valor: {menor}");
+
+//13)
+    int a, b;
+
+    do
+    {
+        Console.Write("Digite o valor de A (maior que B): ");
+        a = int.Parse(Console.ReadLine());
+        Console.Write("Digite o valor de B: ");
+        b = int.Parse(Console.ReadLine());
+
+        if (a <= b)
+        {
+            Console.WriteLine("A deve ser maior que B. Digite novamente.");
+        }
+    } while (a <= b);
+
+    int resto = a;
+    while (resto >= b)
+    {
+        resto -= b;
+    }
+
+    Console.WriteLine($"O resto da divisão de {a} por {b} é: {resto}");
+}
+
+//14)
+    double somaPesoHomens = 0;
+    int quantidadeHomens = 0;
+    double somaPesoMulheres = 0;
+    int quantidadeMulheres = 0;
+
+    for (int i = 0; i < 100; i++)
+    {
+        Console.Write($"Digite o sexo da {i + 1}ª pessoa (F/M): ");
+        char sexo = char.Parse(Console.ReadLine().ToUpper());
+
+        Console.Write($"Digite o peso da {i + 1}ª pessoa: ");
+        double peso = double.Parse(Console.ReadLine());
+
+        if (sexo == 'M')
+        {
+            somaPesoHomens += peso;
+            quantidadeHomens++;
+        }
+        else if (sexo == 'F')
+        {
+            somaPesoMulheres += peso;
+            quantidadeMulheres++;
+        }
+        else
+        {
+            Console.WriteLine("Sexo inválido. Ignorando pessoa.");
+            i--; // Repete a iteração para a mesma pessoa
+        }
+    }
+
+    if (quantidadeHomens > 0)
+    {
+        Console.WriteLine($"Média de peso dos homens: {somaPesoHomens / quantidadeHomens}");
+    }
+    else
+    {
+        Console.WriteLine("Nenhum homem informado.");
+    }
+
+    if (quantidadeMulheres > 0)
+    {
+        Console.WriteLine($"Média de peso das mulheres: {somaPesoMulheres / quantidadeMulheres}");
+    }
+    else
+    {
+        Console.WriteLine("Nenhuma mulher informada.");
+    }
+
+//15)
+    int n;
+    do
+    {
+        Console.Write("Digite a quantidade de valores (1 a 19): ");
+        n = int.Parse(Console.ReadLine());
+        if (n < 1 || n > 19)
+        {
+            Console.WriteLine("Quantidade inválida. Digite novamente.");
+        }
+    } while (n < 1 || n > 19);
+
+    double[] valores = new double[n];
+    double maior = double.MinValue;
+    double menor = double.MaxValue;
+    double soma = 0;
+    int quantidadePositivos = 0;
+    int quantidadeNegativos = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        Console.Write($"Digite o {i + 1}º valor: ");
+        valores[i] = double.Parse(Console.ReadLine());
+
+        if (valores[i] > maior)
+        {
+            maior = valores[i];
+        }
+
+        if (valores[i] < menor)
+        {
+            menor = valores[i];
+        }
+
+        soma += valores[i];
+
+        if (valores[i] > 0)
+        {
+            quantidadePositivos++;
+        }
+        else if (valores[i] < 0)
+        {
+            quantidadeNegativos++;
+        }
+    }
+
+    Console.WriteLine($"Maior valor: {maior}");
+    Console.WriteLine($"Menor valor: {menor}");
+    Console.WriteLine($"Soma dos valores: {soma}");
+    Console.WriteLine($"Média dos valores: {soma / n}");
+    Console.WriteLine($"Porcentagem de valores positivos: {(double)quantidadePositivos / n * 100}%");
+    Console.WriteLine($"Porcentagem de valores negativos: {(double)quantidadeNegativos / n * 100}%");
+
