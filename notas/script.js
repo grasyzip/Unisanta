@@ -89,10 +89,10 @@ function calcularMedia() {
 
         // Verificar segunda condição
         if (segundaMedia >= 5.0) {
-            resultado = `🎉 <strong>APROVADO!</strong><br>Média final: ${segundaMedia.toFixed(1)}`;
+            resultado = '<strong>APROVADO!</strong><br>Média final: ${segundaMedia.toFixed(1)}';
             resultDiv.className = 'result aprovado';
         } else {
-            resultado = `❌ <strong>REPROVADO</strong><br>Média final: ${segundaMedia.toFixed(1)}`;
+            resultado = `<strong>REPROVADO</strong><br>Média final: ${segundaMedia.toFixed(1)}`;
             resultDiv.className = 'result reprovado';
         }
     }
