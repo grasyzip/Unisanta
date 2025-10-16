@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Notas</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Notas</h1>
+        
+        <div class="form-group">
+            <label for="p1">Nota P1:</label>
+            <input type="number" id="p1" step="0.1" maxlength="2" min="0" max="10" placeholder="Digite a nota da P1">
+        </div>
+
+        <div class="form-group">
+            <label for="p2">Nota P2:</label>
+            <input type="number" id="p2" step="0.1" min="0" max="10" placeholder="Digite a nota da P2">
+        </div>
+
+        <div class="form-group">
+            <label for="p3">Nota P3 (se necessário):</label>
+            <input type="number" id="p3" step="0.1" min="0" max="10" placeholder="Digite a nota da P3">
+        </div>
+
+        <button id="calcularBtn">Calcular Situação</button>
+
+        <div id="result" class="result"></div>
+
+        <div class="info">
+            <strong>Como funciona o cálculo:</strong><br>
+            • Média = (P1 + P2 × 2) ÷ 3<br>
+            • Se média ≥ 5.0 → Aprovado<br>
+            • Se não → Pega a maior nota entre P1 e P2<br>
+            • Nova média = (Maior nota + P3 × 2) ÷ 3<br>
+            • Se nova média ≥ 5.0 → Aprovado<br>
+            • Se não → Reprovado
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
