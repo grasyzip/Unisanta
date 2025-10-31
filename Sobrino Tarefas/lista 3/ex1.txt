@@ -1,0 +1,37 @@
+a) `const arr = [];` -> `arr = []`
+
+b) `arr.unshift("Marcelo");`  -> adiciona "Marcelo" no início: `["Marcelo"]`
+
+c) `arr.push("Roberta");`  -> adiciona "Roberta" no final: `["Marcelo", "Roberta"]`
+
+d) `arr.splice(0, 1, "Carlos");`  
+-> remove 1 elemento na posição 0 ("Marcelo") e insere "Carlos"  
+-> `["Carlos", "Roberta"]`
+
+e) `arr.splice(1, 0, "João", "Beatriz", "Lauro");`  
+-> na posição 1, remove 0 elementos e insere "João", "Beatriz", "Lauro"  
+-> `["Carlos", "João", "Beatriz", "Lauro", "Roberta"]`
+
+f) `arr.splice(2, 1);`  
+-> remove 1 elemento na posição 2 ("Beatriz")  
+-> `["Carlos", "João", "Lauro", "Roberta"]`
+
+g) `arr.pop();`  
+-> remove o último elemento ("Roberta")  
+-> `["Carlos", "João", "Lauro"]`
+
+h) `arr.shift();`  
+-> remove o primeiro elemento ("Carlos")  
+-> `["João", "Lauro"]`
+
+Conteúdo final do array:
+
+| Índice | Valor    |
+|--------|----------|
+| [0]    | "João"   |
+| [1]    | "Lauro"  |
+| [2]    |          |
+| [3]    |          |
+| [4]    |          |
+| [5]    |          |
+| [6]    |          |
