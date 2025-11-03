@@ -8,5 +8,6 @@ Professor de programação no 1° Semestre:
 Professores de programação no 2° Semestre:
 - Luiz Antonio Mathias: POO em C#.
 - Alexandre Sobrino: Desenvolvimento WEB, JavaScript. (HTML e CSS)
+  Site criado com os conhecimentos em aula além dos conhecimentos adquiridos no curso Tecnico: https://grasyzip.github.io/DicionarioHTML/
 
 Os codigos podem ser usados por terceiros!
